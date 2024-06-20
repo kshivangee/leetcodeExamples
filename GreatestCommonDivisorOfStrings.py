@@ -19,14 +19,3 @@ class Solution(object):
             return str1[:gcd_length]
         else:
             return ''
-
-        # for i in str1:
-        #     if(i in str2 and i not in result):
-        #         result += i
-        # print result
-        # if(result in str1 and result in str2 and len(result)==gcd_length and set(str1)==set(result) and set(str2)==set(result)):
-        #     return result
-        # else:
-        #     return ''
-
-        
