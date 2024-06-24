@@ -22,6 +22,21 @@ class Solution(object):
             current.next = ListNode(i)
             current = current.next
         return newhead.next
+        
 
-
-    
+        #Approach 2: Using the three pointers prev, next and current by iterating them over the list and reversing the list
+        if(head is None):
+            return None
+        else:
+            if(head.next==None):
+                return head
+            else:
+                prev = nextnode = None
+                current = head
+                # print current
+                while(current):
+                    nextnode = current.next
+                    current.next = prev
+                    prev=current
+                    current = nextnode
+                return prev
