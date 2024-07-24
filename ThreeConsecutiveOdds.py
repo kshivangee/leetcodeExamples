@@ -10,3 +10,18 @@ class Solution(object):
                 return True
         else:
             return False
+
+
+     #Approach 2
+        flag=0
+        for i in range(0,len(arr)-2):
+            print arr[i], arr[i+1], arr[i+2]
+            if(arr[i]%2!=0 and arr[i+1]%2!=0 and arr[i+2]%2!=0):
+                flag=1
+                break
+            else:
+                flag=0
+        if(flag==1):
+            return True
+        else:
+            return False
